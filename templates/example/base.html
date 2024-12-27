@@ -3,9 +3,10 @@
 <html>
   <head>
       <title>Delhi Sweets|{% block title%}{% endblock %}</title>
-      <link rel="stylesheet" type="text/css" href="{% static 'assets/css/base.css' %}" />
+      <link rel="stylesheet" href="{% static 'assets/css/base.css' %}">
   </head>
-  <script src="{% static 'assets/js/base.js' %}"></script>
+ <script src="{% static 'assets/js/base.js' %}">
+ </script>
   <body>
         {%block nav %}
         <div class="nav">

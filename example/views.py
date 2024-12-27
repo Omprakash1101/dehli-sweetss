@@ -6,13 +6,6 @@ from django.http import HttpResponse
 def index(request):
     template = loader.get_template('templates/example/base.html')
     con={
-    'now':datetime.now(),
-    'html':f'''
-    <html>
-        <body>
-            <h1>Hello from Vercel!</h1>
-            <p>The current time is .</p>
-        </body>
-    </html>
-    ''',}
+'now':datetime.now(),
+ }
     return HttpResponse(template.render(con, request))

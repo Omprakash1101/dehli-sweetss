@@ -1,8 +1,17 @@
 {
   "routes": [
     {
-      "src": "/(.*)",
-      "dest": "api/wsgi.py"
+      "src": "/static/(.*)",
+      "dest": "/staticfiles/$1"
+    },
+    {
+      "src": "(.*)",
+      "dest": "manage.py"
+    }  ],
+  "builds": [
+    {
+      "src": "manage.py",
+      "use": "@vercel/python"
     }
   ]
 }
