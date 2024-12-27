@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Delhi Sweets|{% block title%}{% endblock %}</title>
+      <link rel="stylesheet" type="text/css" href="{% static 'assets/css/base.css' %}" />
+  </head>
+  <script src="{% static 'assets/js/base.js' %}"></script>
+  <body>
+        {%block nav %}
+        <div class="nav">
+        <label for="switch" class="switch">
+            <input id="switch" type="checkbox" checked="true"/>
+            <span class="slider"></span>
+            <span class="decoration"></span>
+        </label>
+        </div>
+        {% endblock %}
+        {%block main %}
+<div main>
+<div class="card">
+  <div class="wrapper">
+    <div class="card-image">III</div>
+    <div class="content">
+      <p class="title">UIVERSE PREMIUM FONT (REGULAR)</p>
+      <p class="title price">$3</p>
+      <p class="title price old-price">&nbsp;$6</p>
+      <p></p>
+    </div>
+    <button class="card-btn">DOWNLOAD</button>
+  </div>
+  <p class="tag">-50%</p>
+</div>
+</div>
+        {% endblock %}
+        {%block footer %}{%endblock %}
+    </body>
+</html>
