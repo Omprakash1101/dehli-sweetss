@@ -1,0 +1,55 @@
+# Exclude Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Exclude environment files
+.env
+*.env
+
+# Exclude virtual environments
+venv/
+.virtualenv/
+env/
+
+# Exclude compiled C files
+*.so
+
+# Exclude IDE/editor settings
+.idea/
+*.swp
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Exclude logs
+*.log
+logs/
+*.out
+
+# Exclude test-related files
+tests/
+*.pytest_cache/
+.tox/
+
+# Exclude documentation artifacts
+*.md
+docs/_build/
+
+# Exclude Docker-related files
+Dockerfile.*
+
+# Exclude Git-related files
+.git/
+.gitignore
+.gitmodules
+
+# Exclude build artifacts
+dist/
+build/
+
+# Exclude node_modules (if frontend exists)
+node_modules/
+*.npm/
+package-lock.json
+yarn.lock
